@@ -154,6 +154,10 @@
 					</from>
 					<to>
 						<image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+						<auth>
+							<username>jeff55422</username>
+							<password>M@dd13ness</password>
+						</auth>
 						<tags>
 							<tag>latest</tag>
 						</tags>
