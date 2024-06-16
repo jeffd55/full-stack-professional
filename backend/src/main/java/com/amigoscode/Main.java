@@ -21,36 +21,36 @@ public class Main {
 //        printBeans(applicationContext);
     }
 
-    @Bean
-    CommandLineRunner runner(CustomerRepository repository) {
-        return args -> {
-            Faker faker = new Faker();
-            Random random = new Random();
-            Name name = faker.name();
-            String firstName = name.firstName();
-            String lastName = name.lastName();
-            Customer customer = new Customer(
-                    firstName + " " + lastName,
-                    firstName.toLowerCase() + "." + lastName.toLowerCase() + "@amigoscode.com",
-                    random.nextInt(16,99)
-            );
-//            Customer alex = new Customer(
-//                    "Alex",
-//                    "alex@gmail.com",
-//                    21
+//    @Bean
+//    CommandLineRunner runner(CustomerRepository repository) {
+//        return args -> {
+//            Faker faker = new Faker();
+//            Random random = new Random();
+//            Name name = faker.name();
+//            String firstName = name.firstName();
+//            String lastName = name.lastName();
+//            Customer customer = new Customer(
+//                    firstName + " " + lastName,
+//                    firstName.toLowerCase() + "." + lastName.toLowerCase() + "@amigoscode.com",
+//                    random.nextInt(16,99)
 //            );
-//            Customer jamila = new Customer(
-//                    "Jamila",
-//                    "jamila@gmail.com",
-//                    19
-//            );
-
-//            List<Customer> customers = List.of(alex, jamila);
-//            repository.saveAll(customers);
-            repository.save(customer);
-
-        };
-    }
+////            Customer alex = new Customer(
+////                    "Alex",
+////                    "alex@gmail.com",
+////                    21
+////            );
+////            Customer jamila = new Customer(
+////                    "Jamila",
+////                    "jamila@gmail.com",
+////                    19
+////            );
+//
+////            List<Customer> customers = List.of(alex, jamila);
+////            repository.saveAll(customers);
+//            repository.save(customer);
+//
+//        };
+//    }
 
 //    @Bean
 //    public Foo getFoo() {
