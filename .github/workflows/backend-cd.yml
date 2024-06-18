@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Send Hello Slack Message
         run: >
-          curl -X POST -H 'Content-type: application/json' 
+          curl && curl -X POST -H 'Content-type: application/json' 
           --data '{"text":"Hello :wave:"}' 
           ${{ secrets.SLACK_WEBHOOK_URL }}
       - uses: actions/checkout@v4
