@@ -92,7 +92,11 @@ function App() {
                 {customers.map((customer, index) => (
                 // <p key={index}>{customer.name}</p>
                 <WrapItem key={index}>
-                    <CardWithImage {...customer}/></WrapItem>
+                    <CardWithImage
+                        {...customer}
+                        imageNumber = {index}
+                    />
+                </WrapItem>
             ))}
             </Wrap>
         </SidebarWithHeader>
